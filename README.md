@@ -1,4 +1,4 @@
-# Omnistack 11.0 Week 
+# Omnistack 11 Week 
 
 > A full project (back-end, frontend and mobile) developed using react, react native and nodejs between March 23 and 27 at the year 2020.
 
