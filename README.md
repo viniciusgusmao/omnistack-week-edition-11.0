@@ -120,7 +120,7 @@ To initialize a frontend project:
 
 3. cd frontend && npm install && npm start
 
-To initialize a mobile project, but before install expo-cli globally in your environment:
+To initialize a mobile project, but before install expo-cli globally in your environment using *npm install -g expo-cli*
 
 4. cd mobile && npm install && expo start
 
