@@ -112,7 +112,9 @@ My goal in developing this project is to apply React, React Native and Nodejs te
 In the root directory, apply the commands below:
 
 2. cd backend && npm install && npm start 
+
 The server will be running at port 3333
+
 
 To initialize a frontend project:
 
