@@ -64,7 +64,7 @@ My goal in developing this project is to apply React, React Native and Nodejs te
     <td>POST</td>
     <td>Register new incident</td>
     <td></td>
-    <td></td>
+    <td>{ Authorization: ong_id}</td>
     <td>{ title: String, description: String, value: Number}</td>
     <td></td>
   </tr>
@@ -73,7 +73,7 @@ My goal in developing this project is to apply React, React Native and Nodejs te
     <td>DELETE</td>
     <td>Delete incident</td>
     <td>{id: Number}</td>
-    <td></td>
+    <td>{ Authorization: ong_id}</td>
     <td></td>
     <td></td>
   </tr>
