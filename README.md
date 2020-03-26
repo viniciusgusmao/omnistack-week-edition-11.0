@@ -22,10 +22,10 @@ My goal in developing this project is to apply React, React Native and Nodejs te
 | <img src="https://i.ibb.co/qjjnRkv/Screenshot-20200326-151452.png" /> | <img src="https://i.ibb.co/fvPjSyt/Screenshot-20200326-151502.png" /> |
 
 ### Backend routes
-|  Route |  Method  | Objective | Params | Body |  Response |
+|   Route   |   Method   |   Objective   |   Params   |   Body   |   Response   |
 | ------------ | ------------ | ------------ | ------------ |
-| ongs  | GET  |  List ongs |   | -  | [{ id: Number, name: String, email: String, whatsapp: String, city: String, uf: String  }] |
-| ongs  | POST  |  Register new ong |   | { id: Number, name: String, email: String, whatsapp: String, city: String, uf: String }  |   |
+|   ongs   |   GET   |   List ongs   |   |   |   [{ id: Number, name: String, email: String, whatsapp: String, city: String, uf: String  }]   |
+|   ongs   |   POST   |  Register new ong |   | { id: Number, name: String, email: String, whatsapp: String, city: String, uf: String }  |   |
 | incidents  | GET  |  List incidents |   |   | [{ id: Number, title: String, description: String, value: Number, ong_id: Number, name: String, email: String, whatsapp: String, city: String  }]  |
 | incidents  | POST  | Register new incident |  | { title: String, description: String, value: Number}  |   |
 | incidents  | DELETE  | Delete incident | {id: Number}   |   |   |
