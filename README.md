@@ -11,7 +11,15 @@ My goal in developing this project is to apply React, React Native and Nodejs te
 
 ## Screenshot
 
+### Frontend pages
+<img src="https://i.ibb.co/M8BYf6T/Captura-de-tela-de-2020-03-26-15-10-31.png" />
+<img src="https://i.ibb.co/MV6hPyk/Captura-de-tela-de-2020-03-26-15-12-40.png" />
+<img src="https://i.ibb.co/bXTSQms/Captura-de-tela-de-2020-03-26-15-13-11.png" />
 
+### Mobile pages
+|  Screen 1  |  Screen 2  |
+| ------------ | ------------ | 
+| <img src="https://i.ibb.co/qjjnRkv/Screenshot-20200326-151452.png" /> | <img src="https://i.ibb.co/fvPjSyt/Screenshot-20200326-151502.png" /> |
 
 ### Backend routes
 |  Route |  Method  | Objective | Params | Body |  Response |
