@@ -22,18 +22,114 @@ My goal in developing this project is to apply React, React Native and Nodejs te
 | <img src="https://i.ibb.co/qjjnRkv/Screenshot-20200326-151452.png" /> | <img src="https://i.ibb.co/fvPjSyt/Screenshot-20200326-151502.png" /> |
 
 ### Backend routes
-|   Route   |   Method   |   Objective   |   Params   |   Body   |   Response   |
-| ------------ | ------------ | ------------ | ------------ |
-|   ongs   |   GET   |   List ongs   |   |   |   [{ id: Number, name: String, email: String, whatsapp: String, city: String, uf: String  }]   |
-|   ongs   |   POST   |  Register new ong |   | { id: Number, name: String, email: String, whatsapp: String, city: String, uf: String }  |   |
-| incidents  | GET  |  List incidents |   |   | [{ id: Number, title: String, description: String, value: Number, ong_id: Number, name: String, email: String, whatsapp: String, city: String  }]  |
-| incidents  | POST  | Register new incident |  | { title: String, description: String, value: Number}  |   |
-| incidents  | DELETE  | Delete incident | {id: Number}   |   |   |
-| profile  | GET  | List incidents by ong |   |   |  [{ id: Number, title: String, description: String, value: Number, ong_id: Number}],  |
-| sessions  | POST  | Verify if exist an specific ong |  |   |  { id: String }  |
+<table>
+  <tr>
+    <td>Route</td>
+    <td>Method</td>
+    <td>Objective</td>
+    <td>Params</td>
+    <td>Headers</td>
+    <td>Body</td>
+    <td>Response</td>
+  </tr>
+  <tr>
+    <td>ongs</td>
+    <td>GET</td>
+    <td>List ongs</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>[{ id: Number, name: String, email: String, whatsapp: String, city: String, uf: String  }]</td>
+  </tr>
+  <tr>
+    <td>ongs</td>
+    <td>POST</td>
+    <td>Register new ong</td>
+    <td></td>
+    <td></td>
+    <td>{ id: Number, name: String, email: String, whatsapp: String, city: String, uf: String }</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>incidents</td>
+    <td>GET</td>
+    <td>List incidents</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>[{ id: Number, title: String, description: String, value: Number, ong_id: Number, name: String, email: String, whatsapp: String, city: String  }]</td>
+  </tr>
+  <tr>
+    <td>incidents</td>
+    <td>POST</td>
+    <td>Register new incident</td>
+    <td></td>
+    <td></td>
+    <td>{ title: String, description: String, value: Number}</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>incidents</td>
+    <td>DELETE</td>
+    <td>Delete incident</td>
+    <td>{id: Number}</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>profile</td>
+    <td>GET</td>
+    <td>List incidents by ong</td>
+    <td></td>
+    <td>{ Authorization: ong_id}</td>
+    <td></td>
+    <td>[{ id: Number, title: String, description: String, value: Number, ong_id: Number}]</td>
+  </tr>
+  <tr>
+    <td>sessions</td>
+    <td>POST</td>
+    <td>Verify if exist an specific ong and returns an ong</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>{ id: String } </td>
+  </tr>
+</table> 
+
+## Technologies used
+- React
+- React Native with expo
+- Express
+- Knex
+- Sqlite
 
 ## Instalation
 
-### Steps (pending)
+### Steps
 1. git clone https://github.com/viniciusgusmao/omnistack-11-week.git
-2. 
+
+In the root directory, apply the commands below:
+
+2. cd backend && npm install && npm start 
+The server will be running at port 3333
+
+To initialize a frontend project:
+
+3. cd frontend && npm install && npm start
+
+To initialize a mobile project, but before install expo-cli globally in your environment:
+
+4. cd mobile && npm install && expo start
+
+**Attention**
+In order to communicate the mobile app with localhost server, you will need to modify the IP address at the file: 
+```js
+import axios from 'axios';
+
+const api = axios.create({
+  baseURL: 'http://[YOUR-IP]:3333'
+})
+
+export default api;
+```
