@@ -123,6 +123,7 @@ To initialize a mobile project, but before install expo-cli globally in your env
 4. cd mobile && npm install && expo start
 
 **Attention**
+
 In order to communicate the mobile app with localhost server, you will need to modify the IP address at the file: 
 ```js
 import axios from 'axios';
