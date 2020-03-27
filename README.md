@@ -103,6 +103,10 @@ My goal in developing this project is to apply React, React Native and Nodejs te
 - Express
 - Knex
 - Sqlite
+- Jest
+- Supertest
+- Celebrate
+
 
 ## Instalation
 
@@ -126,7 +130,7 @@ To initialize a mobile project, but before install expo-cli globally in your env
 
 **Attention**
 
-In order to communicate the mobile app with localhost server, you will need to modify the IP address at the file: 
+In order to communicate the mobile app with localhost server, you will need to modify the IP address at the file *src/services/api.js*: 
 ```js
 import axios from 'axios';
 
