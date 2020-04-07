@@ -1,4 +1,4 @@
-# Semana Omnistack 11.0
+# Omnistack Week Edition 11.0
 
 > A full project (back-end, frontend and mobile) developed using react, react native and nodejs between March 23 and 27 at the year 2020.
 
